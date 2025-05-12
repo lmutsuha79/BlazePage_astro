@@ -1,0 +1,26 @@
+---
+const { plan, price, period, description, features = [], buttonText, highlight } = Astro.props;
+---
+<div class={`min-w-60 overflow-hidden flex-1 shrink basis-[0%] p-6 rounded-xl max-md:px-5 ${highlight ? 'bg-[rgba(0,14,116,1)]' : 'bg-[rgba(0,8,63,1)]'}`}>
+  <div class="flex w-full flex-col">
+    <h3 class="text-white text-[27px] font-bold leading-[1.2] tracking-[-0.54px] text-right">{plan}</h3>
+    <div class="flex gap-1 mt-4 items-end">
+      <span class="text-white text-[32px] font-bold leading-[1.2] tracking-[-0.64px]">{price}</span>
+      <span class="text-[rgba(134,149,251,1)] text-base font-normal leading-[1.4]">/ {period}</span>
+    </div>
+    <p class="text-[rgba(134,149,251,1)] text-lg font-normal leading-[1.4] text-right self-stretch mt-4">{description}</p>
+  </div>
+  <div class="bg-[rgba(217,217,217,1)] flex min-h-px w-full mt-8"></div>
+  <div class="flex w-full flex-col text-lg text-white font-normal text-right leading-[1.4] mt-8">
+    {features.map((feature: string) => (
+      <div class="flex w-full gap-3 mt-[13px] first:mt-0">
+        <div class="min-w-60 flex-1 shrink basis-[0%]">{feature}</div>
+        <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect y="0.53833" width="28" height="28" rx="14" fill="#020F3E" />
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9458 9.16002L11.5925 17.2217L9.3758 14.8534C8.96747 14.4684 8.3258 14.445 7.85913 14.7717C7.40413 15.11 7.2758 15.705 7.5558 16.1834L10.1808 20.4534C10.4375 20.85 10.8808 21.095 11.3825 21.095C11.8608 21.095 12.3158 20.85 12.5725 20.4534C12.9925 19.905 21.0075 10.35 21.0075 10.35C22.0575 9.27669 20.7858 8.33169 19.9458 9.14835V9.16002Z" fill="#6E8FFF" />
+        </svg>
+      </div>
+    ))}
+  </div>
+  <button class={`min-h-12 w-full overflow-hidden text-base font-bold mt-8 px-5 py-[18px] rounded-[10px] flex items-center justify-center gap-2 ${highlight ? 'bg-[rgba(38,75,204,1)] text-[rgba(236,236,236,1)]' : 'bg-[rgba(0,18,82,1)] text-[rgba(236,236,236,1)]'}`}>{buttonText}</button>
+</div> 

@@ -1,0 +1,41 @@
+---
+import PricingCard from './PricingCard.astro';
+---
+<section class="bg-[rgba(1,8,38,1)] flex w-full flex-col items-stretch pt-20 pb-[120px] px-5 max-md:max-w-full max-md:pb-[100px]">
+  <div class="flex flex-col relative min-h-[115px] w-full items-center text-center max-md:max-w-full">
+    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/59f5ecb7dca26d0504aabaf8801722c2ef9d5997?placeholderIfAbsent=true" class="absolute h-full w-full object-cover inset-0" alt="Pricing Background" />
+    <h2 class="relative text-[rgba(236,236,236,1)] text-[56px] font-medium leading-[1.2] tracking-[-0.32px] max-md:max-w-full max-md:text-[40px]">خطط واضحة… وأسعار تناسب الجميع</h2>
+    <p class="relative text-[rgba(134,149,251,1)] text-xl font-normal leading-[1.6] mt-4 max-md:max-w-full">سواء كنت تبدأ مشروعك أو تطوّر عملك، اختر الخطة التي تناسبك وادفع فقط لما تحتاج — بدون التزامات طويلة أو رسوم مفاجئة.</p>
+  </div>
+  <div class="self-center w-[1200px] max-w-full mt-20 max-md:mt-10">
+    <div class="flex w-full gap-6 flex-wrap max-md:max-w-full">
+      <PricingCard
+        plan="Spark"
+        price="$1"
+        period="شهر"
+        description="للاختبار والمبتدئين"
+        features={["3 صفحات هبوط", "إنشاء محتوى بالذكاء الاصطناعي", "تحليلات أساسية", "دعم عبر البريد الإلكتروني"]}
+        buttonText="ابدأ الآن"
+        highlight={true}
+      />
+      <PricingCard
+        plan="Blaze"
+        price="$25"
+        period="شهر"
+        description="مثالي للشركات النامية ذات المنتجات المتعددة"
+        features={["80 صفحة / شهر", "إمكانيات اختبار A/B", "تحليلات متقدمة", "دعم بريدي ذو أولوية"]}
+        buttonText="ابدأ الآن"
+        highlight={false}
+      />
+      <PricingCard
+        plan="Inferno"
+        price="$39"
+        period="شهر"
+        description="للشركات التي تحتاج إلى إمكانيات غير محدودة"
+        features={["150 صفحة / شهر", "مقاعد للفريق مضمنة", "قوالب مخصصة", "دعم مخصص"]}
+        buttonText="ابدأ الآن"
+        highlight={false}
+      />
+    </div>
+  </div>
+</section> 
