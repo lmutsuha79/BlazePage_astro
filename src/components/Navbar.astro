@@ -4,10 +4,11 @@ import DarkActionBtn from "./DarkActionBtn.astro";
 ---
 
 <nav
-  class="relative bg-[rgba(0,8,63,0.49)] flex w-full overflow-hidden justify-center px-6 py-4 max-md:max-w-full max-md:px-5"
+  class="relative flex w-full overflow-hidden justify-center px-6 py-4 max-md:max-w-full max-md:px-5"
 >
+  <div class="bg-[rgba(0,8,63,0.49)] blur-xl absolute inset-0"></div>
   <div
-    class="flex min-w-60 w-[1200px] items-center gap-[40px_100px] justify-between flex-wrap"
+    class="z-10 flex min-w-60 w-[1200px] items-center gap-[40px_100px] justify-between flex-wrap"
   >
     <a href="/">
       <!-- SVG Logo -->
