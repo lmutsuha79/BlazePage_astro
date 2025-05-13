@@ -1,3 +1,7 @@
+---
+import LightActionBtn from './LightActionBtn.astro';
+import DarkActionBtn from './DarkActionBtn.astro';
+---
 <div class="flex flex-col relative min-h-[846px] w-full max-md:max-w-full">
   <img
     src="https://cdn.builder.io/api/v1/image/assets/TEMP/af6226df8dbf12ac5db627c6a42b87f9c393bceb?placeholderIfAbsent=true"
@@ -41,25 +45,17 @@
           </p>
         </div>
         <div class="flex gap-4 text-base mt-8">
-          <button
-            class="bg-[rgba(38,75,204,1)] shadow-[0px_2px_2px_rgba(81,101,247,1)] flex items-center gap-1 overflow-hidden text-base text-white font-[622] justify-center pl-4 pr-5 py-3 rounded-[10px]"
-            ,
-          >
+          <LightActionBtn>
             <span class="self-stretch my-auto">ابدأ بدولار واحد</span>
             <img
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/065718920845e894cea8c760cf8d26717bdbac64?placeholderIfAbsent=true"
               class="aspect-[1] object-contain w-6 self-stretch shrink-0 my-auto"
               alt="Icon"
             />
-          </button>
-          <!-- <button
-            class="cursor-pointer bg-[rgba(0,18,82,1)] shadow-[0px_2px_2px_rgba(81,101,247,1)] min-h-12 overflow-hidden text-[rgba(236,236,236,1)] font-bold px-5 py-[18px] rounded-[10px]"
-          > -->
-          <button
-            class="cursor-pointer bg-[rgba(0,18,82,1)] shadow-[0px_2px_2px_rgba(81,101,247,1)] overflow-hidden text-base text-[rgba(236,236,236,1)] font-[711] px-5 py-[18px] rounded-[10px] transition-colors hover:bg-[rgba(0,24,110,1)] focus:outline-none focus:ring-2 focus:ring-[rgba(81,101,247,0.5)] active:translate-y-[1px]"
-          >
+          </LightActionBtn>
+          <DarkActionBtn>
             تسجيل الدخول
-          </button>
+          </DarkActionBtn>
         </div>
       </div>
       <div class="flex w-full flex-col items-stretch mt-10 max-md:max-w-full">
