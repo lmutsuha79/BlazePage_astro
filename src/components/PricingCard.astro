@@ -1,6 +1,7 @@
 ---
 const { plan, price, period, description, features = [], buttonText, highlight } = Astro.props;
 import DarkActionBtn from "./DarkActionBtn.astro";
+import LightActionBtn from "./LightActionBtn.astro";
 ---
 <div class={`min-w-60 overflow-hidden flex-1 shrink basis-[0%] p-6 rounded-xl max-md:px-5 ${highlight ? 'bg-[rgba(0,14,116,1)]' : 'bg-[rgba(0,8,63,1)]'}`}>
   <div class="flex w-full flex-col">
@@ -23,5 +24,8 @@ import DarkActionBtn from "./DarkActionBtn.astro";
       </div>
     ))}
   </div>
-  <DarkActionBtn className={`mt-8 w-full ${highlight ? 'bg-[rgba(38,75,204,1)]' : ''}`}>{buttonText}</DarkActionBtn>
+  {highlight ? 
+    <LightActionBtn className="mt-8 w-full">{buttonText}</LightActionBtn> :
+    <DarkActionBtn className="mt-8 w-full">{buttonText}</DarkActionBtn>
+  }
 </div>
