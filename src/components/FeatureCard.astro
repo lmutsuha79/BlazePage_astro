@@ -2,13 +2,36 @@
 const { imgSrc, imgAlt, title, description, buttonText } = Astro.props;
 import DarkActionBtn from "./DarkActionBtn.astro";
 ---
-<div class="col-span-1 border flex min-w-60 flex-col items-stretch flex-1 shrink basis-[0%] p-[60px] rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid max-md:max-w-full max-md:px-5">
-  <img src={imgSrc} alt={imgAlt} class="aspect-[1] object-contain w-[50px] rounded-[10px]" />
-  <div class="flex w-full flex-col items-stretch mt-4 max-md:max-w-full">
-    <div class="w-full text-right max-md:max-w-full">
-      <h3 class="text-[rgba(236,236,236,1)] text-[32px] font-medium leading-[1.3] tracking-[-0.16px] max-md:max-w-full">{title}</h3>
-      <p class="text-[rgba(134,149,251,1)] text-base font-normal leading-6 mt-2.5 max-md:max-w-full">{description}</p>
+
+<div
+  class="relative col-span-1 border flex min-w-60 flex-col items-stretch flex-1 shrink basis-[0%] p-[60px] rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid max-md:max-w-full max-md:px-5"
+>
+  <div
+    class="absolute inset-0 bg-black"
+    style="background: linear-gradient(to bottom, rgba(81, 101, 247, 0.17) 0%, rgba(110, 143, 255, 0) 100%);"
+  >
+  </div>
+
+  <div class="z-10">
+    <img
+      src={imgSrc}
+      alt={imgAlt}
+      class="aspect-[1] object-contain w-[50px] rounded-[10px]"
+    />
+    <div class="flex w-full flex-col items-stretch mt-4 max-md:max-w-full">
+      <div class="w-full text-right max-md:max-w-full">
+        <h3
+          class="text-[rgba(236,236,236,1)] text-[32px] font-medium leading-[1.3] tracking-[-0.16px] max-md:max-w-full"
+        >
+          {title}
+        </h3>
+        <p
+          class="text-[rgba(134,149,251,1)] text-base font-normal leading-6 mt-2.5 max-md:max-w-full"
+        >
+          {description}
+        </p>
+      </div>
+      <DarkActionBtn className="mt-8">{buttonText}</DarkActionBtn>
     </div>
-    <DarkActionBtn className="mt-8">{buttonText}</DarkActionBtn>
   </div>
 </div>

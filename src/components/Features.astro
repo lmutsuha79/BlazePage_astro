@@ -42,37 +42,44 @@ import DarkActionBtn from "./DarkActionBtn.astro";
         buttonText="ابدأ بدولار واحد"
       />
       <div
-        class="col-span-2 flex border rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid"
+        class="relative col-span-2 flex border rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid"
       >
-        <img
-          class="w-1/2 p-[60px]"
-          src="https://cdn.builder.io/api/v1/image/assets/601c5247c74644d2b1410bca5180228b/fdedf0eacd417e5f85b1060443170c0179f497bf?placeholderIfAbsent=true"
-          alt="smart-illustration.png"
-        />
-        <div class="w-1/2 flex flex-col flex-1 p-[60px] max-md:px-5">
+        <div
+          class="absolute inset-0 bg-black"
+          style="background: linear-gradient(to bottom, rgba(81, 101, 247, 0.17) 0%, rgba(110, 143, 255, 0) 100%);"
+        >
+        </div>
+        <div class="z-10 flex">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets/601c5247c74644d2b1410bca5180228b/88138737b53f94417c6b8ccf61565ed13fa0ca01?placeholderIfAbsent=true"
-            class="aspect-[1] object-contain w-[50px] shadow-[0px_0px_11px_rgba(255,195,0,1)] rounded-[10px]"
-            alt="Arabic Icon"
+            class="w-1/2 p-[60px]"
+            src="https://cdn.builder.io/api/v1/image/assets/601c5247c74644d2b1410bca5180228b/fdedf0eacd417e5f85b1060443170c0179f497bf?placeholderIfAbsent=true"
+            alt="smart-illustration.png"
           />
-          <div
-            class="flex w-full flex-col items-stretch mt-4 max-md:max-w-full"
-          >
-            <div class="w-full text-right max-md:max-w-full">
-              <h3
-                class="text-[rgba(236,236,236,1)] text-[32px] font-medium leading-[1.3] tracking-[-0.16px] max-md:max-w-full"
-              >
-                مصمّم للعالم العربي
-              </h3>
-              <p
-                class="text-[rgba(134,149,251,1)] text-base font-normal leading-6 mt-2.5 max-md:max-w-full"
-              >
-                لا حاجة لكتّاب محتوى أو خبراء تسويق. باستخدام BlazePage، تحصل
-                على نصوص بيع مكتوبة بأسلوب سردي نفسي لزيادة التحويل. يمكنك
-                التبديل إلى الإنجليزية أو الفرنسية أو الألمانية.
-              </p>
+          <div class="w-1/2 flex flex-col flex-1 p-[60px] max-md:px-5">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/601c5247c74644d2b1410bca5180228b/88138737b53f94417c6b8ccf61565ed13fa0ca01?placeholderIfAbsent=true"
+              class="aspect-[1] object-contain w-[50px] shadow-[0px_0px_11px_rgba(255,195,0,1)] rounded-[10px]"
+              alt="Arabic Icon"
+            />
+            <div
+              class="flex w-full flex-col items-stretch mt-4 max-md:max-w-full"
+            >
+              <div class="w-full text-right max-md:max-w-full">
+                <h3
+                  class="text-[rgba(236,236,236,1)] text-[32px] font-medium leading-[1.3] tracking-[-0.16px] max-md:max-w-full"
+                >
+                  مصمّم للعالم العربي
+                </h3>
+                <p
+                  class="text-[rgba(134,149,251,1)] text-base font-normal leading-6 mt-2.5 max-md:max-w-full"
+                >
+                  لا حاجة لكتّاب محتوى أو خبراء تسويق. باستخدام BlazePage، تحصل
+                  على نصوص بيع مكتوبة بأسلوب سردي نفسي لزيادة التحويل. يمكنك
+                  التبديل إلى الإنجليزية أو الفرنسية أو الألمانية.
+                </p>
+              </div>
+              <DarkActionBtn className="mt-8">ابدأ بدولار واحد</DarkActionBtn>
             </div>
-            <DarkActionBtn className="mt-8">ابدأ بدولار واحد</DarkActionBtn>
           </div>
         </div>
       </div>
@@ -93,4 +100,3 @@ import DarkActionBtn from "./DarkActionBtn.astro";
     </div>
   </div>
 </section>
-
