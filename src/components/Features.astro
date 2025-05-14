@@ -26,7 +26,9 @@ import DarkActionBtn from "./DarkActionBtn.astro";
     </p>
   </div>
   <div class="self-center w-[1200px] max-w-full mt-20 max-md:mt-6">
-    <div class="w-full grid grid-cols-2 gap-6 max-md:max-w-full max-md:grid-cols-1 max-md:gap-4">
+    <div
+      class="w-full grid grid-cols-2 gap-6 max-md:max-w-full max-md:grid-cols-1 max-md:gap-4"
+    >
       <FeatureCard
         imgSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/a7c717edcbe18aeab5af797f27ee21eb8f1a870b?placeholderIfAbsent=true"
         imgAlt="Fast Icon"
@@ -42,20 +44,20 @@ import DarkActionBtn from "./DarkActionBtn.astro";
         buttonText="ابدأ بدولار واحد"
       />
       <div
-        class="relative col-span-2 flex border rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid"
+        class="relative col-span-2 max-md:col-span-1 flex border rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid"
       >
         <div
           class="absolute inset-0 bg-black"
           style="background: linear-gradient(to bottom, rgba(81, 101, 247, 0.17) 0%, rgba(110, 143, 255, 0) 100%);"
         >
         </div>
-        <div class="z-10 flex">
+        <div class="z-10 flex max-md:flex-col-reverse">
           <img
-            class="w-1/2 p-[60px]"
+            class="w-1/2 p-[60px] max-md:w-full"
             src="https://cdn.builder.io/api/v1/image/assets/601c5247c74644d2b1410bca5180228b/fdedf0eacd417e5f85b1060443170c0179f497bf?placeholderIfAbsent=true"
             alt="smart-illustration.png"
           />
-          <div class="w-1/2 flex flex-col flex-1 p-[60px] max-md:px-5">
+          <div class="w-1/2 max-md:w-full flex flex-col flex-1 p-[60px] max-md:px-5">
             <img
               src="https://cdn.builder.io/api/v1/image/assets/601c5247c74644d2b1410bca5180228b/88138737b53f94417c6b8ccf61565ed13fa0ca01?placeholderIfAbsent=true"
               class="aspect-[1] object-contain w-[50px] shadow-[0px_0px_11px_rgba(255,195,0,1)] rounded-[10px]"
