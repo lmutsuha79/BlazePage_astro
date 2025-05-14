@@ -5,9 +5,9 @@ import DarkActionBtn from "./DarkActionBtn.astro";
 
 <div class="flex flex-col relative min-h-[846px] w-full max-md:max-w-full">
   <div
-    class="relative flex w-full overflow-hidden flex-wrap pl-[41px] pr-[72px] py-20 max-md:max-w-full max-md:px-5 max-md:pt-[40px]"
+    class="relative flex flex-col lg:flex-row w-full overflow-hidden pl-[41px] pr-[72px] py-20 max-md:max-w-full max-md:px-5 max-md:pt-[40px]"
   >
-    <div class="min-w-60 grow shrink w-[707px] max-md:max-w-full">
+    <div class="">
       <div class="flex w-full flex-col items-stretch max-md:max-w-full">
         <div
           class="flex w-full flex-col items-sta font-normal text-right leading-[1.6] max-md:max-w-full"
@@ -17,13 +17,20 @@ import DarkActionBtn from "./DarkActionBtn.astro";
               class="w-fit bg-[rgba(14,3,105,1)] border flex items-center gap-2.5 text-lg text-white justify-center flex-wrap px-4 py-1.5 rounded-[22px] border-[rgba(255,255,255,0.2)] border-solid max-md:max-w-full max-md:text-base"
             >
               <p class="self-stretch my-auto">
+                <svg
+                  class="inline"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.665 16.235C8.91 16.408 9.202 16.5 9.501 16.499V16.495C9.78331 16.4957 10.0596 16.4135 10.2955 16.2584C10.5315 16.1034 10.7166 15.8824 10.828 15.623L11.441 13.759C11.5825 13.3367 11.8203 12.9531 12.1357 12.6386C12.4511 12.3241 12.8353 12.0873 13.258 11.947L15.036 11.369C15.3229 11.2689 15.5708 11.0807 15.7444 10.8313C15.918 10.5819 16.0084 10.284 16.0026 9.98017C15.9968 9.67636 15.8952 9.38212 15.7123 9.13948C15.5294 8.89683 15.2745 8.71818 14.984 8.62901L13.229 8.05901C12.8046 7.91754 12.4189 7.67914 12.1027 7.36271C11.7864 7.04627 11.5482 6.66051 11.407 6.23601L10.829 4.45901C10.7282 4.17599 10.5417 3.93139 10.2955 3.7592C10.0493 3.58702 9.7556 3.4958 9.45517 3.49822C9.15474 3.50064 8.86252 3.59657 8.61912 3.7727C8.37572 3.94883 8.19323 4.1964 8.097 4.48101L7.514 6.27301C7.37322 6.68517 7.14079 7.06003 6.83421 7.36938C6.52763 7.67874 6.15487 7.91453 5.744 8.05901L3.967 8.62901C3.68179 8.7277 3.43467 8.91327 3.26037 9.15964C3.08606 9.40602 2.99333 9.70081 2.99521 10.0026C2.99708 10.3044 3.09347 10.598 3.27082 10.8422C3.44818 11.0864 3.69759 11.2689 3.984 11.364L5.738 11.933C6.16237 12.0755 6.54784 12.3146 6.86403 12.6315C7.18021 12.9483 7.41847 13.3343 7.56 13.759L8.138 15.534C8.237 15.817 8.421 16.062 8.665 16.235ZM8.291 11.984C8.17962 11.8382 8.05833 11.7002 7.928 11.571H7.931C7.44796 11.088 6.85908 10.724 6.211 10.508L4.611 10L6.222 9.47601C6.85953 9.25527 7.43777 8.89088 7.912 8.41101C8.38412 7.92805 8.74011 7.34397 8.953 6.70301L9.468 5.12101L9.984 6.70801C10.1997 7.35478 10.5635 7.94226 11.0463 8.42367C11.5291 8.90509 12.1176 9.26714 12.765 9.48101L14.385 10.003L12.795 10.518C12.1487 10.733 11.5614 11.0958 11.0799 11.5775C10.5983 12.0592 10.2358 12.6466 10.021 13.293L9.506 14.875L8.991 13.29C8.83317 12.8182 8.59648 12.3766 8.291 11.984ZM16.332 21.281C16.1412 21.1451 15.9978 20.9527 15.922 20.731L15.594 19.725C15.5304 19.5335 15.4231 19.3595 15.2806 19.2166C15.1381 19.0738 14.9643 18.9661 14.773 18.902L13.782 18.579C13.5553 18.5022 13.3582 18.3566 13.2182 18.1625C13.0782 17.9683 13.0023 17.7354 13.001 17.496C13.0007 17.258 13.0749 17.026 13.2132 16.8323C13.3514 16.6386 13.5468 16.493 13.772 16.416L14.778 16.09C14.9651 16.0235 15.1345 15.915 15.2732 15.7729C15.4119 15.6307 15.5161 15.4587 15.578 15.27L15.902 14.279C15.9782 14.0548 16.1222 13.8598 16.3141 13.7209C16.506 13.5821 16.7362 13.5062 16.9731 13.5039C17.2099 13.5016 17.4416 13.5729 17.6361 13.708C17.8307 13.8431 17.9784 14.0353 18.059 14.258L18.388 15.272C18.4524 15.4621 18.56 15.6347 18.7022 15.7762C18.8445 15.9178 19.0176 16.0245 19.208 16.088L20.2 16.411C20.4287 16.4825 20.629 16.6242 20.7727 16.816C20.9163 17.0078 20.9959 17.2399 21.0002 17.4794C21.0046 17.719 20.9333 17.9538 20.7967 18.1507C20.6601 18.3475 20.465 18.4963 20.239 18.576L19.225 18.905C19.0343 18.9694 18.8612 19.0771 18.7193 19.2197C18.5773 19.3624 18.4704 19.536 18.407 19.727L18.085 20.716C18.007 20.946 17.859 21.146 17.66 21.286C17.4659 21.424 17.2334 21.4977 16.9952 21.4969C16.757 21.496 16.5251 21.4205 16.332 21.281ZM15.302 17.498C15.6945 17.6386 16.0506 17.8652 16.3444 18.161C16.6381 18.4568 16.8621 18.8145 17 19.208C17.1393 18.8162 17.3642 18.4603 17.6583 18.1663C17.9523 17.8722 18.3082 17.6473 18.7 17.508C18.3044 17.3695 17.9448 17.1442 17.6475 16.8487C17.3502 16.5531 17.1228 16.1948 16.982 15.8C16.8444 16.1898 16.6223 16.5443 16.3314 16.8381C16.0406 17.1318 15.6884 17.3575 15.3 17.499"
+                    fill="white"></path>
+                </svg>
                 أول مصمّم صفحات هبوط بالذكاء الاصطناعي في العالم العربي
               </p>
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/cc0ff575aad4aa541301a29bb388cc5e151dd0ce?placeholderIfAbsent=true"
-                class="aspect-[1] object-contain w-6 self-stretch shrink-0 my-auto"
-                alt="AI Icon"
-              />
             </div>
           </div>
           <h1
@@ -38,7 +45,9 @@ import DarkActionBtn from "./DarkActionBtn.astro";
             حوّل صورة وسعر منتجك إلى صفحة تبيع، بدون مصمم، وبتكلفة رمزية.
           </p>
         </div>
-        <div class="flex gap-4 text-base mt-8 max-md:flex-row max-md:gap-2 max-md:mt-4">
+        <div
+          class="flex gap-4 text-base mt-8 max-md:flex-row max-md:gap-2 max-md:mt-4"
+        >
           <LightActionBtn>
             <span class="self-stretch my-auto">ابدأ بدولار واحد</span>
             <img
@@ -58,38 +67,38 @@ import DarkActionBtn from "./DarkActionBtn.astro";
         </div>
         <div class="flex gap-6 flex-wrap mt-4 max-md:max-w-full">
           <div
-            class="border flex flex-col justify-center w-[104px] p-3 rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid"
+            class="border flex flex-col justify-center w-[74px] h-[74px] p-3 rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid"
           >
             <img
               src="/rgb.png"
-              class="aspect-[1] object-contain w-20"
+              class="aspect-[1] object-contain w-full h-full"
               alt="Example 1"
             />
           </div>
           <div
-            class="border flex flex-col justify-center w-[104px] p-3 rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid"
+            class="border flex flex-col justify-center w-[74px] h-[74px] p-3 rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid"
           >
             <img
               src="/grill.png"
-              class="aspect-[1] object-contain w-20"
+              class="aspect-[1] object-contain w-full h-full"
               alt="Example 2"
             />
           </div>
           <div
-            class="border flex flex-col justify-center w-[104px] p-3 rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid"
+            class="border flex flex-col justify-center w-[74px] h-[74px] p-3 rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid"
           >
             <img
               src="/rgb.png"
-              class="aspect-[1] object-contain w-20"
+              class="aspect-[1] object-contain w-full h-full"
               alt="Example 3"
             />
           </div>
           <div
-            class="border flex flex-col justify-center w-[104px] p-3 rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid"
+            class="border flex flex-col justify-center w-[74px] h-[74px] p-3 rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid"
           >
             <img
               src="/grill.png"
-              class="aspect-[1] object-contain w-20"
+              class="aspect-[1] object-contain w-full h-full"
               alt="Example 4"
             />
           </div>
@@ -97,8 +106,8 @@ import DarkActionBtn from "./DarkActionBtn.astro";
       </div>
     </div>
     <img
+      class="aspect-[0.85] object-contain w-[430px] md:w-[517px]"
       src="https://cdn.builder.io/api/v1/image/assets/TEMP/6f455ad5efefce26a6d3d6c52b6769d3bbff209a?placeholderIfAbsent=true"
-      class="aspect-[0.85] object-contain w-[414px] min-w-60 grow shrink max-md:max-w-full"
       alt="Hero Image"
     />
   </div>
