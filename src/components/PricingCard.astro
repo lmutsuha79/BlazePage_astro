@@ -3,17 +3,17 @@ const { plan, price, period, description, features = [], buttonText, highlight }
 import DarkActionBtn from "./DarkActionBtn.astro";
 import LightActionBtn from "./LightActionBtn.astro";
 ---
-<div class={`min-w-60 overflow-hidden flex-1 shrink basis-[0%] p-6 rounded-xl max-md:px-5 ${highlight ? 'bg-[rgba(0,14,116,1)]' : 'bg-[rgba(0,8,63,1)]'}`}>
+<div class={`min-w-60 overflow-hidden flex-1 shrink basis-[0%] p-6 rounded-xl max-md:px-5 max-md:p-3 ${highlight ? 'bg-[rgba(0,14,116,1)]' : 'bg-[rgba(0,8,63,1)]'}`}>
   <div class="flex w-full flex-col">
-    <h3 class="text-white text-[27px] font-bold leading-[1.2] tracking-[-0.54px] text-right">{plan}</h3>
+    <h3 class="text-white text-[27px] font-bold leading-[1.2] tracking-[-0.54px] text-right max-md:text-lg">{plan}</h3>
     <div class="flex gap-1 mt-4 items-end">
-      <span class="text-white text-[32px] font-bold leading-[1.2] tracking-[-0.64px]">{price}</span>
-      <span class="text-[rgba(134,149,251,1)] text-base font-normal leading-[1.4]">/ {period}</span>
+      <span class="text-white text-[32px] font-bold leading-[1.2] tracking-[-0.64px] max-md:text-xl">{price}</span>
+      <span class="text-[rgba(134,149,251,1)] text-base font-normal leading-[1.4] max-md:text-sm">/ {period}</span>
     </div>
-    <p class="text-[rgba(134,149,251,1)] text-lg font-normal leading-[1.4] text-right self-stretch mt-4">{description}</p>
+    <p class="text-[rgba(134,149,251,1)] text-lg font-normal leading-[1.4] text-right self-stretch mt-4 max-md:text-sm max-md:mt-2">{description}</p>
   </div>
   <div class="bg-[rgba(217,217,217,1)] flex min-h-px w-full mt-8"></div>
-  <div class="flex w-full flex-col text-lg text-white font-normal text-right leading-[1.4] mt-8">
+  <div class="flex w-full flex-col text-lg text-white font-normal text-right leading-[1.4] mt-8 max-md:text-sm max-md:mt-4">
     {features.map((feature: string) => (
       <div class="flex w-full gap-3 mt-[13px] first:mt-0">
         <div class="min-w-60 flex-1 shrink basis-[0%]">{feature}</div>
@@ -25,7 +25,7 @@ import LightActionBtn from "./LightActionBtn.astro";
     ))}
   </div>
   {highlight ? 
-    <LightActionBtn className="mt-8 w-full">{buttonText}</LightActionBtn> :
-    <DarkActionBtn className="mt-8 w-full">{buttonText}</DarkActionBtn>
+    <LightActionBtn className="mt-8 w-full max-md:mt-4">{buttonText}</LightActionBtn> :
+    <DarkActionBtn className="mt-8 w-full max-md:mt-4">{buttonText}</DarkActionBtn>
   }
 </div>
