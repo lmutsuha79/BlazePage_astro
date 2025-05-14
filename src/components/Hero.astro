@@ -1,6 +1,7 @@
 ---
 import LightActionBtn from "./LightActionBtn.astro";
 import DarkActionBtn from "./DarkActionBtn.astro";
+import ExampleButton from "./ExampleButton.astro";
 ---
 
 <div class="flex flex-col relative min-h-[846px] w-full max-md:max-w-full">
@@ -66,45 +67,10 @@ import DarkActionBtn from "./DarkActionBtn.astro";
           أمثلة
         </div>
         <div class="flex gap-6 flex-wrap mt-4 max-md:max-w-full">
-          <button
-            type="button"
-
-            class="border flex flex-col justify-center w-[74px] h-[74px] p-3 rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid hover:border-[rgba(255,255,255,0.4)] hover:bg-[rgba(0,24,110,1)] cursor-pointer"
-          >
-            <img
-              src="/rgb.png"
-              class="aspect-[1] object-contain w-full h-full"
-              alt="Example 1"
-            />
-          </button
-          >
-          <div
-            class="border flex flex-col justify-center w-[74px] h-[74px] p-3 rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid"
-          >
-            <img
-              src="/grill.png"
-              class="aspect-[1] object-contain w-full h-full"
-              alt="Example 2"
-            />
-          </div>
-          <div
-            class="border flex flex-col justify-center w-[74px] h-[74px] p-3 rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid"
-          >
-            <img
-              src="/rgb.png"
-              class="aspect-[1] object-contain w-full h-full"
-              alt="Example 3"
-            />
-          </div>
-          <div
-            class="border flex flex-col justify-center w-[74px] h-[74px] p-3 rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid"
-          >
-            <img
-              src="/grill.png"
-              class="aspect-[1] object-contain w-full h-full"
-              alt="Example 4"
-            />
-          </div>
+          <ExampleButton src="/rgb.png" alt="Example 1" />
+          <ExampleButton src="/grill.png" alt="Example 2" />
+          <ExampleButton src="/rgb.png" alt="Example 3" />
+          <ExampleButton src="/grill.png" alt="Example 4" />
         </div>
       </div>
     </div>
